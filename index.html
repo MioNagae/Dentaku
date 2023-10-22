@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+ <html lang="ja">
+   <head>
+     <meta charset="utf-8">
+     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="main.css">
+     <title>電卓</title>
+   </head>
+ 
+   <body onload="setResult()">
+     <table class="dentaku">
+      <!--ディスプレイ-->
+      <tr>
+       <td colspan="4" id="result">0</td>
+      </tr>
+      <!--一段目-->
+      <tr class="btnContainer">
+       <td class="button_b">
+        <button class="button one_nine" onclick="clickButton(this)">7</button>
+       </td>
+       <td class="button_b">
+        <button class="button one_nine" onclick="clickButton(this)">8</button>
+       </td>
+       <td class="button_b">
+        <button class="button one_nine" onclick="clickButton(this)">9</button>
+       </td>
+       <td class="button_b">
+        <button class="button cal" onclick="clickButton(this),operating(this)">+</button>
+       </td>
+      </tr>
+      <!--二段目-->
+      <tr>
+       <td class="button_b">
+        <button class="button one-nine" onclick="clickButton(this)">4</button>
+       </td>
+       <td class="button_b">
+        <button class="button one_nine" onclick="clickButton(this)">5</button>
+       </td>
+       <td class="button_b">
+        <button class="button one_nine" onclick="clickButton(this)">6</button>
+       </td>
+       <td class="button_b">
+        <button class="button cal" onclick="clickButton(this)">-</button>
+       </td>
+      </tr>
+      <!--三段目-->
+      <tr>
+       <td class="button_b">
+        <button class="button one_nine" onclick="clickButton(this)">1</button>
+       </td>
+       <td class="button_b">
+        <button class="button one_nine" onclick="clickButton(this)">2</button>
+       </td>
+       <td class="button_b">
+        <button class="button one_nine" onclick="clickButton(this)">3</button>
+       </td>
+       <td class="button_b">
+        <button class="button cal" onclick="clickButton(this)">*</button>
+       </td>
+      </tr>
+      <!--四段目-->
+      <tr>
+       <td class="button_b">
+        <button class="button" onclick="clickButton(this)">0</button>
+       </td>
+       <td class="button_b">
+        <button class="button" id="wzero" onclick="clickButton(this)" >00</button>
+       </td>
+       <td class="button_b">
+        <button class="button" id="point" onclick="clickButton(this)">.</button>
+       </td>
+       <td class="button_b">
+        <button class="button cal" name = "operator" onclick="clickButton(this)">/</button>
+       </td>
+      </tr>
+      <!--五段目（最下部）-->
+      <tr>
+       <td colspan="2" class="button_b">
+        <button class="button" onclick="clickButton(this)">AC</button>
+       </td>
+       <td colspan="2" class="button_b">
+        <button class="button" onclick="clickButton(this)">=</button>
+       </td>
+      </tr>
+       
+     </table>
+     <script src="main.js"></script>
+   </body>
+ </html>

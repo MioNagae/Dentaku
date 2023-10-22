@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*-----------表示画面------------*/
+
+/*数字、記号*/
+table {
+  width: 300px;
+  height: 30px;
+  justify-content: space-between;
+}
+
+.dentaku {
+  table-layout: fixed;
+}
+
+#result{
+  width: 300px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: right;
+}
+
+.btnContainer {
+  justify-content: space-between; 
+}
+
+.button {
+  width: 100%;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
